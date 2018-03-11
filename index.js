@@ -15,7 +15,7 @@ constructor(props){
   super(props);
   this.state = { videos: [] };
  
-  YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+  YTSearch({key: API_KEY, term: 'surfboards', limit:5}, (videos) => {
     this.Setstate = ({ videos});
   });
 }
